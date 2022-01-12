@@ -1,5 +1,4 @@
-# my_neovim
-## Personal neovim configuration
+# my_neovim - personal neovim configuration
 
 ## Requirements: 
 [Neovim 0.5.x](https://github.com/neovim/neovim) , [FZF](https://github.com/junegunn/fzf)
@@ -8,7 +7,7 @@
 1. Install neovim 
 2. Clone this repository:
 ```
-git clone https://github.com/dl1987/my_neovim ~/.neovim/config
+git clone https://github.com/dl1987/my_neovim ~/.config/nvim
 ```
 3. Install package manager [vim-plug](https://github.com/junegunn/vim-plug):
 ```
