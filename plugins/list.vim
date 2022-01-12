@@ -1,7 +1,7 @@
 call plug#begin('$HOME/.local/share/nvim/plugged')
     Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-    Plug 'Shougo/denite.nvim'
-    Plug 'ozelentok/denite-gtags'
+    " Plug 'Shougo/denite.nvim'
+    " Plug 'ozelentok/denite-gtags'
     Plug 'Shougo/defx.nvim'
     Plug 'tpope/vim-commentary'
     Plug 'gustafj/vim-ttcn'
@@ -29,7 +29,7 @@ call plug#begin('$HOME/.local/share/nvim/plugged')
 call plug#end()
 
 source $HOME/.config/nvim/plugins/deoplete.vim
-source $HOME/.config/nvim/plugins/denite.vim
+" source $HOME/.config/nvim/plugins/denite.vim
 source $HOME/.config/nvim/plugins/defx.vim
 source $HOME/.config/nvim/plugins/gitgutter.vim
 source $HOME/.config/nvim/plugins/vim_ttcn.vim
