@@ -4,9 +4,8 @@ call plug#begin('$HOME/.local/share/nvim/plugged')
     " Plug 'ozelentok/denite-gtags'
     Plug 'Shougo/defx.nvim'
     Plug 'tpope/vim-commentary'
-    Plug 'gustafj/vim-ttcn'
     Plug 'matfranczyk/highlighter.vim'
-    Plug 'jiangmiao/auto-pairs'
+    Plug 'windwp/nvim-autopairs'
     Plug 'junegunn/rainbow_parentheses.vim'
     Plug 'yamatsum/nvim-cursorline'
 "git
@@ -16,6 +15,7 @@ call plug#begin('$HOME/.local/share/nvim/plugged')
     Plug 'bronson/vim-trailing-whitespace'
 "programming languages
     Plug 'bfrg/vim-cpp-modern'
+    Plug 'gustafj/vim-ttcn'
 "fzf
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
@@ -39,3 +39,4 @@ source $HOME/.config/nvim/plugins/lsp.vim
 
 source $HOME/.config/nvim/plugins/vim_cpp_modern.vim
 source $HOME/.config/nvim/plugins/parentheses.vim
+source $HOME/.config/nvim/plugins/autopairs.vim
