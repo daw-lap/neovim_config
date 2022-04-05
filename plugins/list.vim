@@ -21,5 +21,3 @@ call plug#begin('$HOME/.local/share/nvim/plugged')
 call plug#end()
 
 source $HOME/.config/nvim/plugins/gitgutter.vim
-source $HOME/.config/nvim/plugins/lsp.vim
-
