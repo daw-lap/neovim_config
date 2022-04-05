@@ -5,7 +5,7 @@ call plug#begin('$HOME/.local/share/nvim/plugged')
     Plug 'yamatsum/nvim-cursorline'
 "git
     Plug 'tpope/vim-fugitive'
-    Plug 'airblade/vim-gitgutter'
+    Plug 'lewis6991/gitsigns.nvim'
 "utilities
     Plug 'bronson/vim-trailing-whitespace'
 "fzf
@@ -20,4 +20,3 @@ call plug#begin('$HOME/.local/share/nvim/plugged')
     Plug 'morhetz/gruvbox'
 call plug#end()
 
-source $HOME/.config/nvim/plugins/gitgutter.vim
