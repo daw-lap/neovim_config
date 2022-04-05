@@ -4,3 +4,6 @@ let g:python_host_prog = '$HOME/.venv/neovim_p2/bin/python'
 
 source $HOME/.config/nvim/general.vim
 source $HOME/.config/nvim/plugins/list.vim
+
+lua require('plugins')
+lua require('autopairs-settings')
