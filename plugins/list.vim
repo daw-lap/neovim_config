@@ -9,9 +9,6 @@ call plug#begin('$HOME/.local/share/nvim/plugged')
     Plug 'airblade/vim-gitgutter'
 "utilities
     Plug 'bronson/vim-trailing-whitespace'
-"programming languages
-    Plug 'bfrg/vim-cpp-modern'
-    Plug 'gustafj/vim-ttcn'
 "fzf
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
@@ -25,11 +22,9 @@ call plug#begin('$HOME/.local/share/nvim/plugged')
 call plug#end()
 
 source $HOME/.config/nvim/plugins/gitgutter.vim
-source $HOME/.config/nvim/plugins/vim_ttcn.vim
 source $HOME/.config/nvim/plugins/gruvbox.vim
 source $HOME/.config/nvim/plugins/fzf.vim
 source $HOME/.config/nvim/plugins/lsp.vim
 
-source $HOME/.config/nvim/plugins/vim_cpp_modern.vim
 source $HOME/.config/nvim/plugins/parentheses.vim
 source $HOME/.config/nvim/plugins/autopairs.vim
