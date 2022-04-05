@@ -18,6 +18,8 @@ Plug 'zackhsi/fzf-tags'
 --lsp
 Plug 'ojroques/nvim-lspfuzzy'
 Plug 'neovim/nvim-lspconfig'
+--syntax
+Plug ('nvim-treesitter/nvim-treesitter', { ['do'] = ':TSUpdate' })
 --layout
 Plug 'morhetz/gruvbox'
 vim.call('plug#end')
