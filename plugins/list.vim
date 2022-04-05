@@ -2,7 +2,6 @@ call plug#begin('$HOME/.local/share/nvim/plugged')
     Plug 'tpope/vim-commentary'
     Plug 'matfranczyk/highlighter.vim'
     Plug 'windwp/nvim-autopairs'
-    Plug 'junegunn/rainbow_parentheses.vim'
     Plug 'yamatsum/nvim-cursorline'
 "git
     Plug 'tpope/vim-fugitive'
@@ -26,5 +25,4 @@ source $HOME/.config/nvim/plugins/gruvbox.vim
 source $HOME/.config/nvim/plugins/fzf.vim
 source $HOME/.config/nvim/plugins/lsp.vim
 
-source $HOME/.config/nvim/plugins/parentheses.vim
 source $HOME/.config/nvim/plugins/autopairs.vim
