@@ -4,15 +4,14 @@
 [Neovim 0.5.x](https://github.com/neovim/neovim) , [FZF](https://github.com/junegunn/fzf)
 
 ## Installation
-1. Install neovim 
+1. Install neovim
 2. Clone this repository:
 ```
-git clone https://github.com/dl1987/my_neovim ~/.config/nvim
+git clone https://github.com/dl1987/my_neovim; cd my_neovim
 ```
-3. Install package manager [vim-plug](https://github.com/junegunn/vim-plug):
+3. Install package manager [packer](https://github.com/wbthomason/packer.nvim):
 ```
-sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+make packer
 ```
 4. Create python-virtualenv for python3 at least, install pynvim for created venv:
 ```
@@ -21,8 +20,7 @@ source $HOME/.venv/neovim_p3/bin/activate
 python -m pip install pynvim
 deactivate
 ```
-5. Install plugins using vim-plug:
+5. Install plugins using packer:
 ```
-:PlugInstall
+make packer
 ```
-Running ```:UpdateRemotePlugins``` may be needed
