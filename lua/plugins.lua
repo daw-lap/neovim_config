@@ -1,25 +1,25 @@
-local Plug = vim.fn['plug#']
+return require('packer').startup(function(use)
+  --Plugin manager
+  use 'wbthomason/packer.nvim'
 
-vim.call('plug#begin', '$HOME/.local/share/nvim/plugged')
-
-Plug 'windwp/nvim-autopairs'
-Plug 'tpope/vim-commentary'
-Plug 'matfranczyk/highlighter.vim'
-Plug 'yamatsum/nvim-cursorline'
---git
-Plug 'tpope/vim-fugitive'
-Plug 'lewis6991/gitsigns.nvim'
---utilities
-Plug 'bronson/vim-trailing-whitespace'
---fzf
-Plug('junegunn/fzf', { ['do'] = vim.fn['fzf#install'] })
-Plug 'junegunn/fzf.vim'
-Plug 'zackhsi/fzf-tags'
---lsp
-Plug 'ojroques/nvim-lspfuzzy'
-Plug 'neovim/nvim-lspconfig'
---syntax
-Plug ('nvim-treesitter/nvim-treesitter', { ['do'] = ':TSUpdate' })
---layout
-Plug 'morhetz/gruvbox'
-vim.call('plug#end')
+  use 'windwp/nvim-autopairs'
+  use 'tpope/vim-commentary'
+  use 'matfranczyk/highlighter.vim'
+  use 'yamatsum/nvim-cursorline'
+  --git
+  use 'tpope/vim-fugitive'
+  use 'lewis6991/gitsigns.nvim'
+  --utilities
+  use 'bronson/vim-trailing-whitespace'
+  --fzf
+  use('junegunn/fzf', { ['do'] = vim.fn['fzf#install'] })
+  use 'junegunn/fzf.vim'
+  use 'zackhsi/fzf-tags'
+  --lsp
+  use 'ojroques/nvim-lspfuzzy'
+  use 'neovim/nvim-lspconfig'
+  --syntax
+  use ('nvim-treesitter/nvim-treesitter', { ['do'] = ':TSUpdate' })
+  --layout
+  use 'morhetz/gruvbox'
+end)
