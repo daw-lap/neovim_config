@@ -3,7 +3,7 @@ vim.cmd [[
   autocmd BufNewFile,BufRead *.LOG setfiletype log
   autocmd BufNewFile,BufRead *.out setfiletype log
   autocmd BufNewFile,BufRead *.journal setfiletype messages
-  autocmd Filetype cpp,c setlocal colorcolumn=120
+  autocmd Filetype cpp,c setlocal colorcolumn=100
   autocmd Filetype python setlocal colorcolumn=90
 ]]
 
