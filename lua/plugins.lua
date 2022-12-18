@@ -2,6 +2,8 @@ return require('packer').startup(function(use)
   --Plugin manager
   use 'wbthomason/packer.nvim'
 
+  use 'nvim-lua/plenary.nvim'
+
   use 'windwp/nvim-autopairs'
   use 'numToStr/Comment.nvim'
   -- use 'tpope/vim-commentary'
@@ -12,10 +14,7 @@ return require('packer').startup(function(use)
   use 'lewis6991/gitsigns.nvim'
   --utilities
   use 'bronson/vim-trailing-whitespace'
-  --fzf
-  use('junegunn/fzf', { ['do'] = vim.fn['fzf#install'] })
-  use 'junegunn/fzf.vim'
-  use 'zackhsi/fzf-tags'
+  use 'nvim-telescope/telescope.nvim'
   --lsp
   use 'ojroques/nvim-lspfuzzy'
   use 'neovim/nvim-lspconfig'
