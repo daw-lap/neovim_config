@@ -3,7 +3,8 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
   use 'windwp/nvim-autopairs'
-  use 'tpope/vim-commentary'
+  use 'numToStr/Comment.nvim'
+  -- use 'tpope/vim-commentary'
   use 'matfranczyk/highlighter.vim'
   use 'yamatsum/nvim-cursorline'
   --git

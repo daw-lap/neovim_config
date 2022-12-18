@@ -5,6 +5,7 @@ vim.g.python_host_prog = '$HOME/.venv/neovim_p2/bin/python'
 require('plugins')
 require('colorscheme')
 require('general')
+require('comment-settings')
 require('filetype-settings')
 require('autopairs-settings')
 require('fzf-settings')
