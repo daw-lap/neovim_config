@@ -1,3 +1,5 @@
+local M = {}
+
 vim.diagnostic.config({
   virtual_text = false,
   signs = true,
@@ -28,11 +30,15 @@ local on_attach_clangd = function(client, bufnr)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gs', '<cmd>:ClangdSwitchSourceHeader<CR>', opts)
 end
 
-require('lspconfig')['clangd'].setup {
-  on_attach = on_attach_clangd,
-  init_options = { compilationDatabaseDirectory = "build"; }
-}
+function M:configure()
+  require('lspconfig')['clangd'].setup {
+    on_attach = on_attach_clangd,
+    init_options = { compilationDatabaseDirectory = "build"; }
+  }
 
-require('lspconfig')['pyright'].setup {
-  on_attach = on_attach
-}
+  require('lspconfig')['pyright'].setup {
+    on_attach = on_attach
+  }
+end
+
+return M

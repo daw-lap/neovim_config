@@ -1,4 +1,6 @@
-require('gitsigns').setup {
-  signcolumn = true,
-  numhl = true,
+local config = {
+  signcolumn=true,
+  numhl=true,
 }
+
+return config

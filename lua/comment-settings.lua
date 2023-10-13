@@ -1,3 +1,5 @@
-require('Comment').setup{
-  padding = false,
+local config = {
+  padding = false
 }
+
+return config
