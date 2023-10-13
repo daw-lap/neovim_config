@@ -1,5 +1,4 @@
 local plugins = {
-  --"nvim-lua/plenary.nvim",
   {
     "windwp/nvim-autopairs",
     event = { 'BufRead', 'BufNewFile' },
@@ -19,7 +18,7 @@ local plugins = {
   },
   {
     "matfranczyk/highlighter.vim",
-    event = { 'BufRead', 'BufNewFile' },
+    lazy = false
   },
   --{
   -- "yamatsum/nvim-cursorline",
@@ -39,7 +38,7 @@ local plugins = {
       return require("gitsigns-settings")
     end,
     config = function(_, opts)
-      require("gitsigns").setup{opts}
+      require("gitsigns").setup(opts)
     end
   },
   --utilities
@@ -60,13 +59,14 @@ local plugins = {
   {
     "neovim/nvim-lspconfig",
     event = { 'BufRead', 'BufNewFile' },
-    config = function(_, opts)
+    config = function(_, _)
       require("lsp-settings").configure()
     end
   },
   --syntax
   {
     "nvim-treesitter/nvim-treesitter",
+    event = { 'BufRead', 'BufNewFile' },
     build = ":TSUpdate",
     opts = function()
       return require("treesitter-settings")

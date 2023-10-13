@@ -1,6 +1,6 @@
 local config = {
   signcolumn=true,
-  numhl=true,
+  numhl=true
 }
 
 return config
