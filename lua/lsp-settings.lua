@@ -28,16 +28,32 @@ end
 local on_attach_clangd = function(client, bufnr)
   on_attach(client, bufnr)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gs', '<cmd>:ClangdSwitchSourceHeader<CR>', opts)
+  vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>f', '<cmd> lua vim.lsp.buf.code_action({apply=true})<CR>', opts)
 end
 
 function M:configure()
   require('lspconfig')['clangd'].setup {
     on_attach = on_attach_clangd,
-    init_options = { compilationDatabaseDirectory = "build"; }
+    cmd = {'clangd','--query-driver=/home/dawlap/.sdk/sysroots/x86_64-acu6sdk-linux/usr/bin/aarch64-acu6-linux/aarch64-acu6-linux-g++', '--clang-tidy'},
   }
 
   require('lspconfig')['pyright'].setup {
     on_attach = on_attach
+  }
+  require('lspconfig').pylsp.setup{
+    settings ={
+      pyls = {
+        plugins = {
+          pylint = {enabled = true},
+          flake8 = {enabled = true},
+
+        }
+      }
+    }
+  }
+
+  require('lspconfig').cmake.setup {
+    buildDirectory = "build"
   }
 end
 
