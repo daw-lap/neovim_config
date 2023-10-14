@@ -12,7 +12,10 @@ local config = {
     "toml",
     "vim",
     "yaml",
-    "lua"
+    "lua",
+    "html",
+    "css",
+    "javascript"
   },
   highlight = {
     enable = true,
