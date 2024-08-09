@@ -13,3 +13,20 @@ vim.opt.incsearch = true
 vim.opt.hlsearch = true
 
 vim.g.mapleader = ','
+
+function ToggleTabSettings()
+  if vim.o.tabstop == 8 then
+    vim.o.tabstop = 2
+    vim.o.shiftwidth = 2
+    vim.o.softtabstop = 2
+    vim.o.expandtab = true
+  else
+    vim.o.tabstop = 8
+    vim.o.shiftwidth = 8
+    vim.o.softtabstop = 8
+    vim.o.expandtab = false
+  end
+  print("Tab settings toggled")
+end
+
+vim.api.nvim_set_keymap('n', '<Leader>tt', ':lua ToggleTabSettings()<CR>', { noremap = true, silent = true })
