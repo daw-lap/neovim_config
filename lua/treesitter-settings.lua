@@ -1,5 +1,6 @@
 local config = {
   ensure_installed = {
+    "bitbake",
     "cpp",
     "c",
     "python",
@@ -15,7 +16,14 @@ local config = {
     "lua",
     "html",
     "css",
-    "javascript"
+    "javascript",
+    "diff",
+    "dockerfile",
+    "gitignore",
+    "git_rebase",
+    "gitcommit",
+    "strace",
+
   },
   highlight = {
     enable = true,
